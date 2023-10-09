@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+#root {
+  margin: auto;
+}
+.game-board {
+  margin: auto;
+  font-size: 0;
+  width: 800px;
+  height: 800px;
+}
+.size-of {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+.wall {
+  background-color: rgb(10, 2, 40);
+  /* border-radius: 12px; */
+}
+.pacman {
+  transform: translate(0, 0);
+}
+.empty {
+  padding: 15px;
+}
+.score-pill {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: yellow;
+}
+/* .pill{
+  background-color: beige;
+} */
+.ghost {
+  transform: translate(0, 0);
+}
+img {
+  width: 40px;
+  height: 40px;
+}
+.score {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  text-align: center;
+  font-size: larger;
+  font-weight: 600;
+  background-color: antiquewhite;
+  padding: 24px;
+  border: solid red;
+  max-width: 300px;
+  min-height: 40px;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+  margin: 15% auto;
+  border: red;
+  width: 400px;
+  height: 230px;
+  background-color:blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 38px;
+  font-weight: bolder;
+  color: antiquewhite;
+}
+.modal-content .reload{
+  margin-top: 12px;
+  font-size: large;
+  color: yellow;
+  cursor: pointer;
+}
